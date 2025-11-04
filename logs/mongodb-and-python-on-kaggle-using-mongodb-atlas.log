@@ -1,0 +1,82 @@
+11.0s 1 Requirement already satisfied: pymongo[srv] in /usr/local/lib/python3.10/dist-packages (4.11.1)
+11.1s 2 [33mWARNING: pymongo 4.11.1 does not provide the extra 'srv'[0m[33m
+11.1s 3 [0mRequirement already satisfied: dnspython<3.0.0,>=1.16.0 in /usr/local/lib/python3.10/dist-packages (from pymongo[srv]) (2.7.0)
+15.0s 4 Note: you may need to restart the kernel to use updated packages.
+15.1s 5 Python 3.10.12
+15.2s 6 OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
+17.2s 7 ✅ Pinged your deployment. You successfully connected to MongoDB!
+17.2s 8 ['datascience_db', 'mydatabase', 'sample_mflix', 'admin', 'local']
+17.4s 9 ['datascience_db', 'mydatabase', 'sample_mflix', 'admin', 'local']
+17.5s 10 The database exists.
+17.7s 11 ✅ Data inserted successfully!
+17.8s 12 
+17.8s 13 All documents:
+17.8s 14 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+17.8s 15 {'_id': ObjectId('6909b7ca974eb8caaff4f85c'), 'product': 'Smartphone', 'price': 850, 'quantity': 10, 'category': 'Electronics', 'region': 'Asia'}
+17.8s 16 {'_id': ObjectId('6909b7ca974eb8caaff4f85d'), 'product': 'Tablet', 'price': 420, 'quantity': 7, 'category': 'Electronics', 'region': 'America'}
+17.8s 17 {'_id': ObjectId('6909b7ca974eb8caaff4f85e'), 'product': 'Desk', 'price': 320, 'quantity': 5, 'category': 'Furniture', 'region': 'Europe'}
+17.8s 18 {'_id': ObjectId('6909b7ca974eb8caaff4f85f'), 'product': 'Chair', 'price': 150, 'quantity': 12, 'category': 'Furniture', 'region': 'Asia'}
+17.8s 19 {'_id': ObjectId('6909b7ca974eb8caaff4f860'), 'product': 'Monitor', 'price': 300, 'quantity': 9, 'category': 'Electronics', 'region': 'America'}
+17.8s 20 {'_id': ObjectId('6909b7ca974eb8caaff4f861'), 'product': 'Keyboard', 'price': 100, 'quantity': 15, 'category': 'Electronics', 'region': 'Europe'}
+17.8s 21 {'_id': ObjectId('6909b7ca974eb8caaff4f862'), 'product': 'Sofa', 'price': 700, 'quantity': 2, 'category': 'Furniture', 'region': 'Asia'}
+17.9s 22 
+17.9s 23 Products with price > 500:
+17.9s 24 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+17.9s 25 {'_id': ObjectId('6909b7ca974eb8caaff4f85c'), 'product': 'Smartphone', 'price': 850, 'quantity': 10, 'category': 'Electronics', 'region': 'Asia'}
+17.9s 26 {'_id': ObjectId('6909b7ca974eb8caaff4f862'), 'product': 'Sofa', 'price': 700, 'quantity': 2, 'category': 'Furniture', 'region': 'Asia'}
+17.9s 27 
+17.9s 28 Only product name and price:
+17.9s 29 {'product': 'Laptop', 'price': 1500}
+17.9s 30 {'product': 'Smartphone', 'price': 850}
+17.9s 31 {'product': 'Tablet', 'price': 420}
+17.9s 32 {'product': 'Desk', 'price': 320}
+17.9s 33 {'product': 'Chair', 'price': 150}
+17.9s 34 {'product': 'Monitor', 'price': 300}
+17.9s 35 {'product': 'Keyboard', 'price': 100}
+17.9s 36 {'product': 'Sofa', 'price': 700}
+17.9s 37 
+17.9s 38 Electronics in Europe:
+17.9s 39 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+17.9s 40 {'_id': ObjectId('6909b7ca974eb8caaff4f861'), 'product': 'Keyboard', 'price': 100, 'quantity': 15, 'category': 'Electronics', 'region': 'Europe'}
+18.0s 41 
+18.0s 42 Sort by descending price:
+18.0s 43 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+18.0s 44 {'_id': ObjectId('6909b7ca974eb8caaff4f85c'), 'product': 'Smartphone', 'price': 850, 'quantity': 10, 'category': 'Electronics', 'region': 'Asia'}
+18.0s 45 {'_id': ObjectId('6909b7ca974eb8caaff4f862'), 'product': 'Sofa', 'price': 700, 'quantity': 2, 'category': 'Furniture', 'region': 'Asia'}
+18.0s 46 {'_id': ObjectId('6909b7ca974eb8caaff4f85d'), 'product': 'Tablet', 'price': 420, 'quantity': 7, 'category': 'Electronics', 'region': 'America'}
+18.0s 47 {'_id': ObjectId('6909b7ca974eb8caaff4f85e'), 'product': 'Desk', 'price': 320, 'quantity': 5, 'category': 'Furniture', 'region': 'Europe'}
+18.0s 48 {'_id': ObjectId('6909b7ca974eb8caaff4f860'), 'product': 'Monitor', 'price': 300, 'quantity': 9, 'category': 'Electronics', 'region': 'America'}
+18.0s 49 {'_id': ObjectId('6909b7ca974eb8caaff4f85f'), 'product': 'Chair', 'price': 150, 'quantity': 12, 'category': 'Furniture', 'region': 'Asia'}
+18.0s 50 {'_id': ObjectId('6909b7ca974eb8caaff4f861'), 'product': 'Keyboard', 'price': 100, 'quantity': 15, 'category': 'Electronics', 'region': 'Europe'}
+18.1s 51 
+18.1s 52 Total documents: 8
+18.1s 53 Electronics products: 5
+18.3s 54 
+18.3s 55 All documents:
+18.3s 56 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+18.3s 57 {'_id': ObjectId('6909b7ca974eb8caaff4f85c'), 'product': 'Smartphone', 'price': 850, 'quantity': 10, 'category': 'Electronics', 'region': 'Asia'}
+18.3s 58 {'_id': ObjectId('6909b7ca974eb8caaff4f85d'), 'product': 'Tablet', 'price': 500, 'quantity': 7, 'category': 'Electronics', 'region': 'America'}
+18.3s 59 {'_id': ObjectId('6909b7ca974eb8caaff4f85e'), 'product': 'Desk', 'price': 352.0, 'quantity': 5, 'category': 'Furniture', 'region': 'Europe'}
+18.3s 60 {'_id': ObjectId('6909b7ca974eb8caaff4f860'), 'product': 'Monitor', 'price': 300, 'quantity': 9, 'category': 'Electronics', 'region': 'America'}
+18.3s 61 {'_id': ObjectId('6909b7ca974eb8caaff4f862'), 'product': 'Sofa', 'price': 770.0000000000001, 'quantity': 2, 'category': 'Furniture', 'region': 'Asia'}
+18.4s 62 
+18.4s 63 📈 Aggregation: revenue and quantity by category
+18.4s 64 {'_id': 'Electronics', 'total_revenue': 20700, 'average_price': 787.5, 'total_quantity': 30}
+18.4s 65 {'_id': 'Furniture', 'total_revenue': 3300.0, 'average_price': 561.0, 'total_quantity': 7}
+19.4s 66 
+19.4s 67 📊 Aggregated data as DataFrame:
+19.9s 68 
+19.9s 69 ⚙️ Products with price > 300 OR quantity > 10:
+19.9s 70 {'_id': ObjectId('6909b7ca974eb8caaff4f85b'), 'product': 'Laptop', 'price': 1500, 'quantity': 4, 'category': 'Electronics', 'region': 'Europe'}
+19.9s 71 {'_id': ObjectId('6909b7ca974eb8caaff4f85c'), 'product': 'Smartphone', 'price': 850, 'quantity': 10, 'category': 'Electronics', 'region': 'Asia'}
+19.9s 72 {'_id': ObjectId('6909b7ca974eb8caaff4f85d'), 'product': 'Tablet', 'price': 500, 'quantity': 7, 'category': 'Electronics', 'region': 'America'}
+19.9s 73 {'_id': ObjectId('6909b7ca974eb8caaff4f85e'), 'product': 'Desk', 'price': 352.0, 'quantity': 5, 'category': 'Furniture', 'region': 'Europe'}
+19.9s 74 {'_id': ObjectId('6909b7ca974eb8caaff4f862'), 'product': 'Sofa', 'price': 770.0000000000001, 'quantity': 2, 'category': 'Furniture', 'region': 'Asia'}
+23.1s 75 /usr/local/lib/python3.10/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+23.1s 76 warn(
+23.2s 77 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+23.6s 78 [NbConvertApp] Writing 54694 bytes to __notebook__.ipynb
+25.2s 79 /usr/local/lib/python3.10/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+25.2s 80 warn(
+25.2s 81 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+26.3s 82 [NbConvertApp] Writing 342457 bytes to __results__.html
