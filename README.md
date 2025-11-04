@@ -33,8 +33,8 @@ The goal is to show how MongoDB’s **Aggregation Framework** can replace comple
 
 | Step | Description |
 |------|--------------|
-| 1| Connect to MongoDB (local & Atlas) using `pymongo` |
-| 2| Create databases and collections dynamically |
+| 1️⃣| Connect to MongoDB (local & Atlas) using `pymongo` |
+| 2️⃣| Create databases and collections dynamically |
 | 3️| Insert bulk data from DataFrames |
 | 4️| Create single and compound indexes for faster queries |
 | 5️| Perform advanced filtering and conditional updates |
