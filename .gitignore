@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+*.env
+
+# Logs and temporary files
+logs/
+*.log
+.DS_Store
+*.tmp
+
+# Data and results
+data/
+results/*.csv
+results/*.json
+
+# Models
+models/*.h5
+models/*.keras
+models/*.pkl
+
+# IDE and system files
+.vscode/
+.idea/
+*.bak

@@ -1,0 +1,9 @@
+# ⚙️ Configs
+
+# Configuration files for database connection and environment setup.
+
+```
+database:
+  name: datascience_db
+  collection: sales_data
+  uri = f"mongodb+srv://{username}:{password}@{cluster}/?appName=Cluster0"
